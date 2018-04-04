@@ -7,17 +7,19 @@
 <body>
 	<script>
 		var numRandom = Math.round(Math.random()*100);
-		var num = 0, intentos = 0;
+		var num = 0, attemps = 0;
 		do{
-			num=promt("intro num between 0 and 100");
+			num=prompt("intro num between 0 and 100. The secret number is: " + numRandom + ". Intentos: " + attemps);
 			if(numRandom > num){
-				alert("higher);
+				alert("higher");
 			}
 			if(numRandom < num){
 				alert("lower");
 			}
+			attemps++;
+			
 		}while(numRandom!=num){
-			alet("you are right!");
+			alert("you are right!");
 		}
 	</script>
 </body>
