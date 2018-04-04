@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+</head>
+<body>
+	<script>
+		var numRandom = Math.round(Math.random()*100);
+		var num = 0, intentos = 0;
+		do{
+			num=promt("intro num between 0 and 100");
+			if(numRandom > num){
+				alert("higher);
+			}
+			if(numRandom < num){
+				alert("lower");
+			}
+		}while(numRandom!=num){
+			alet("you are right!");
+		}
+	</script>
+</body>
+</html>
