@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>video-18.html</title>
+</head>
+
+<body>
+	
+	<script>
+		var num=0, attemps=0;
+		var numRamdom=Math.round(Math.random()*100);
+		document.write("<br>Secret number: " + numRamdom);
+		
+		do{
+			num=prompt("Intro between 0 and 100. Secret number=" + numRamdom + "Attemps=" + attemps);
+			
+			if(numRamdom>num){
+				document.write("Higher");
+			}if(numRamdom<num){
+				document.write("Lower");
+			}attemps++;
+		}while(numRamdom!=num);
+	</script>
+</body>
+</html>
